@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.5)
+  - Nuke (8.4.1)
+  - URLImage (0.9.13)
+
+DEPENDENCIES:
+  - Alamofire
+  - Nuke
+  - URLImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Nuke
+    - URLImage
+
+SPEC CHECKSUMS:
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
+  URLImage: bc851af67404bd3e8680269770d5a2c9dfaacaf2
+
+PODFILE CHECKSUM: 229046e8443684b555cc764d04ccafead31c97a8
+
+COCOAPODS: 1.9.1
