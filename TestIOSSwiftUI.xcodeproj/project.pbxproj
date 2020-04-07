@@ -3,13 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B9A66F7884E9003DC42C2F3 /* Pods_TestIOSSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3FC5E4A3E1AA674B271A14B /* Pods_TestIOSSwiftUI.framework */; };
-		7A4D3208DE27ABF6A9249966 /* Pods_TestIOSSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C979EAB2DB1FF90AA05FAA /* Pods_TestIOSSwiftUITests.framework */; };
+		4AC2702D598C4B3F16C98063 /* libPods-TestIOSSwiftUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B26EBFAAF61B513CCE287A /* libPods-TestIOSSwiftUI.a */; };
+		83A575B39A98A61A0C98A719 /* libPods-TestIOSSwiftUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1A4E66C64C02E79F47740A /* libPods-TestIOSSwiftUITests.a */; };
+		C407564A24388359005599B7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C407564924388359005599B7 /* APIService.swift */; };
 		C41713C5242CC4B6003E39E4 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41713C4242CC4B6003E39E4 /* MovieRow.swift */; };
+		C43288F8243C1DF6003AACDD /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43288F7243C1DF6003AACDD /* RestClient.swift */; };
+		C43288FA243C1E06003AACDD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43288F9243C1E06003AACDD /* AppState.swift */; };
+		C43288FF243C6B81003AACDD /* LoadableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43288FE243C6B81003AACDD /* LoadableState.swift */; };
+		C43734B424347C5900FAAFB5 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43734B324347C5900FAAFB5 /* MovieRepository.swift */; };
 		C44018532429AACD00A679DB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44018522429AACD00A679DB /* Home.swift */; };
 		C44018682429AFB900A679DB /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C440185A2429AFB900A679DB /* charleyrivers.jpg */; };
 		C44018692429AFB900A679DB /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C440185B2429AFB900A679DB /* turtlerock.jpg */; };
@@ -37,6 +42,11 @@
 		C44018B7242A1F0900A679DB /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C44018B6242A1F0900A679DB /* main.storyboard */; };
 		C44018B9242A1F6000A679DB /* LandmarkDetailMS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44018B8242A1F6000A679DB /* LandmarkDetailMS.swift */; };
 		C44018BC242A21C900A679DB /* LandmarkDetailMSRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44018BB242A21C900A679DB /* LandmarkDetailMSRepresentable.swift */; };
+		C444B34824373F7200CA5B26 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C444B34724373F7200CA5B26 /* ReSwift */; };
+		C444B34B2437507200CA5B26 /* MovieAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444B34A2437507200CA5B26 /* MovieAction.swift */; };
+		C444B34D2437507F00CA5B26 /* MovieReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444B34C2437507F00CA5B26 /* MovieReducer.swift */; };
+		C444B34F2437510600CA5B26 /* MovieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444B34E2437510600CA5B26 /* MovieState.swift */; };
+		C444B3512437516500CA5B26 /* ObservableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C444B3502437516500CA5B26 /* ObservableState.swift */; };
 		C445D1E02420CCED00EFC792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445D1DF2420CCED00EFC792 /* AppDelegate.swift */; };
 		C445D1E22420CCED00EFC792 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445D1E12420CCED00EFC792 /* SceneDelegate.swift */; };
 		C445D1E62420CCEF00EFC792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C445D1E52420CCEF00EFC792 /* Assets.xcassets */; };
@@ -46,11 +56,11 @@
 		C445D2022420CCEF00EFC792 /* TestIOSSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C445D2012420CCEF00EFC792 /* TestIOSSwiftUIUITests.swift */; };
 		C47333CC242C6152005B8A23 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47333CB242C6152005B8A23 /* LandmarkList.swift */; };
 		C496A1EF242B40B200E65C56 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496A1EE242B40B200E65C56 /* Movie.swift */; };
-		C496A1F2242B40E800E65C56 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C496A1F1242B40E800E65C56 /* NetworkManager.swift */; };
+		C4C34CE1243B06E30054ABF0 /* ListMovieState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C34CE0243B06E30054ABF0 /* ListMovieState.swift */; };
 		C4E8F277242CCC0000FF2BB7 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F276242CCC0000FF2BB7 /* MovieDetails.swift */; };
 		C4E8F279242CCC8100FF2BB7 /* ListMoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F278242CCC8100FF2BB7 /* ListMoviesView.swift */; };
 		C4E8F27B242CDD1700FF2BB7 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F27A242CDD1700FF2BB7 /* RemoteImage.swift */; };
-		FABF318C5A428CDD36AE44E1 /* Pods_TestIOSSwiftUI_TestIOSSwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196C81C15B5FE0E830F71D7E /* Pods_TestIOSSwiftUI_TestIOSSwiftUIUITests.framework */; };
+		FF48E763076537255F9FE760 /* libPods-TestIOSSwiftUI-TestIOSSwiftUIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EDAE8497947A9AC1ECE3F62E /* libPods-TestIOSSwiftUI-TestIOSSwiftUIUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,14 +82,19 @@
 
 /* Begin PBXFileReference section */
 		0CEC42AF6EB4023C05AD971A /* Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		14B26EBFAAF61B513CCE287A /* libPods-TestIOSSwiftUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestIOSSwiftUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188851B4D2660F4E2A135CD8 /* Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
-		196C81C15B5FE0E830F71D7E /* Pods_TestIOSSwiftUI_TestIOSSwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestIOSSwiftUI_TestIOSSwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		34C979EAB2DB1FF90AA05FAA /* Pods_TestIOSSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestIOSSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D23B295DF371B878379AF5 /* Pods-TestIOSSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOSSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestIOSSwiftUITests/Pods-TestIOSSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A1A4E66C64C02E79F47740A /* libPods-TestIOSSwiftUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestIOSSwiftUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06F72385ADC86F26D9F53C8 /* Pods-TestIOSSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOSSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-TestIOSSwiftUI/Pods-TestIOSSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		B795E00A7E426CAFC384DB74 /* Pods-TestIOSSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOSSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-TestIOSSwiftUITests/Pods-TestIOSSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B86FFF035531C6B41A4B0B67 /* Pods-TestIOSSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestIOSSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-TestIOSSwiftUI/Pods-TestIOSSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		C407564924388359005599B7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		C41713C4242CC4B6003E39E4 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
+		C43288F7243C1DF6003AACDD /* RestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
+		C43288F9243C1E06003AACDD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C43288FE243C6B81003AACDD /* LoadableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableState.swift; sourceTree = "<group>"; };
+		C43734B324347C5900FAAFB5 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		C44018522429AACD00A679DB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C440185A2429AFB900A679DB /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		C440185B2429AFB900A679DB /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
@@ -107,6 +122,10 @@
 		C44018B6242A1F0900A679DB /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		C44018B8242A1F6000A679DB /* LandmarkDetailMS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailMS.swift; sourceTree = "<group>"; };
 		C44018BB242A21C900A679DB /* LandmarkDetailMSRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailMSRepresentable.swift; sourceTree = "<group>"; };
+		C444B34A2437507200CA5B26 /* MovieAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAction.swift; sourceTree = "<group>"; };
+		C444B34C2437507F00CA5B26 /* MovieReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieReducer.swift; sourceTree = "<group>"; };
+		C444B34E2437510600CA5B26 /* MovieState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieState.swift; sourceTree = "<group>"; };
+		C444B3502437516500CA5B26 /* ObservableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableState.swift; sourceTree = "<group>"; };
 		C445D1DC2420CCED00EFC792 /* SP_IOSSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SP_IOSSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C445D1DF2420CCED00EFC792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C445D1E12420CCED00EFC792 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,11 +141,11 @@
 		C445D2032420CCEF00EFC792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C47333CB242C6152005B8A23 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		C496A1EE242B40B200E65C56 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		C496A1F1242B40E800E65C56 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C4C34CE0243B06E30054ABF0 /* ListMovieState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieState.swift; sourceTree = "<group>"; };
 		C4E8F276242CCC0000FF2BB7 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
 		C4E8F278242CCC8100FF2BB7 /* ListMoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviesView.swift; sourceTree = "<group>"; };
 		C4E8F27A242CDD1700FF2BB7 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
-		E3FC5E4A3E1AA674B271A14B /* Pods_TestIOSSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestIOSSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDAE8497947A9AC1ECE3F62E /* libPods-TestIOSSwiftUI-TestIOSSwiftUIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestIOSSwiftUI-TestIOSSwiftUIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9A66F7884E9003DC42C2F3 /* Pods_TestIOSSwiftUI.framework in Frameworks */,
+				4AC2702D598C4B3F16C98063 /* libPods-TestIOSSwiftUI.a in Frameworks */,
+				C444B34824373F7200CA5B26 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A4D3208DE27ABF6A9249966 /* Pods_TestIOSSwiftUITests.framework in Frameworks */,
+				83A575B39A98A61A0C98A719 /* libPods-TestIOSSwiftUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FABF318C5A428CDD36AE44E1 /* Pods_TestIOSSwiftUI_TestIOSSwiftUIUITests.framework in Frameworks */,
+				FF48E763076537255F9FE760 /* libPods-TestIOSSwiftUI-TestIOSSwiftUIUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +180,9 @@
 		70B5A41A1E6380C0B49B72A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E3FC5E4A3E1AA674B271A14B /* Pods_TestIOSSwiftUI.framework */,
-				196C81C15B5FE0E830F71D7E /* Pods_TestIOSSwiftUI_TestIOSSwiftUIUITests.framework */,
-				34C979EAB2DB1FF90AA05FAA /* Pods_TestIOSSwiftUITests.framework */,
+				14B26EBFAAF61B513CCE287A /* libPods-TestIOSSwiftUI.a */,
+				EDAE8497947A9AC1ECE3F62E /* libPods-TestIOSSwiftUI-TestIOSSwiftUIUITests.a */,
+				6A1A4E66C64C02E79F47740A /* libPods-TestIOSSwiftUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -180,14 +200,11 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C41713C3242CC4AB003E39E4 /* Movie */ = {
+		C43288FB243C2C85003AACDD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C41713C4242CC4B6003E39E4 /* MovieRow.swift */,
-				C4E8F276242CCC0000FF2BB7 /* MovieDetails.swift */,
-				C4E8F278242CCC8100FF2BB7 /* ListMoviesView.swift */,
 			);
-			path = Movie;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		C44018592429AFB900A679DB /* Resources */ = {
@@ -241,6 +258,17 @@
 			path = "Old View";
 			sourceTree = "<group>";
 		};
+		C444B3492437505600CA5B26 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				C444B3502437516500CA5B26 /* ObservableState.swift */,
+				C444B34A2437507200CA5B26 /* MovieAction.swift */,
+				C444B34C2437507F00CA5B26 /* MovieReducer.swift */,
+				C444B34E2437510600CA5B26 /* MovieState.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
 		C445D1D32420CCED00EFC792 = {
 			isa = PBXGroup;
 			children = (
@@ -266,12 +294,11 @@
 		C445D1DE2420CCED00EFC792 /* TestIOSSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C41713C3242CC4AB003E39E4 /* Movie */,
-				C496A1F0242B40DB00E65C56 /* Network */,
+				C4C34CDA243ACB4C0054ABF0 /* basic_repo */,
+				C444B3492437505600CA5B26 /* Redux */,
 				C44018AD242A0F9A00A679DB /* Old View */,
 				C44018982429C0D900A679DB /* Supporting Views */,
 				C445D1E72420CCEF00EFC792 /* Preview Content */,
-				C44018782429B54500A679DB /* Models */,
 				C44018592429AFB900A679DB /* Resources */,
 				C445D1DF2420CCED00EFC792 /* AppDelegate.swift */,
 				C445D1E12420CCED00EFC792 /* SceneDelegate.swift */,
@@ -318,9 +345,75 @@
 		C496A1F0242B40DB00E65C56 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C496A1F1242B40E800E65C56 /* NetworkManager.swift */,
+				C407564924388359005599B7 /* APIService.swift */,
+				C43288F7243C1DF6003AACDD /* RestClient.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C4C34CDA243ACB4C0054ABF0 /* basic_repo */ = {
+			isa = PBXGroup;
+			children = (
+				C43288FB243C2C85003AACDD /* Utils */,
+				C4C34CE2243B0C990054ABF0 /* State */,
+				C496A1F0242B40DB00E65C56 /* Network */,
+				C4C34CDF243ACC960054ABF0 /* Repository */,
+				C44018782429B54500A679DB /* Models */,
+				C4C34CDB243ACB5C0054ABF0 /* Screens */,
+			);
+			path = basic_repo;
+			sourceTree = "<group>";
+		};
+		C4C34CDB243ACB5C0054ABF0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C4C34CDC243ACBEC0054ABF0 /* Movies */,
+				C4C34CDE243ACC070054ABF0 /* Supporting Views */,
+				C4C34CDD243ACBF30054ABF0 /* Detail */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C4C34CDC243ACBEC0054ABF0 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				C4E8F278242CCC8100FF2BB7 /* ListMoviesView.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		C4C34CDD243ACBF30054ABF0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C4E8F276242CCC0000FF2BB7 /* MovieDetails.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C4C34CDE243ACC070054ABF0 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				C41713C4242CC4B6003E39E4 /* MovieRow.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		C4C34CDF243ACC960054ABF0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C43734B324347C5900FAAFB5 /* MovieRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C4C34CE2243B0C990054ABF0 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C4C34CE0243B06E30054ABF0 /* ListMovieState.swift */,
+				C43288F9243C1E06003AACDD /* AppState.swift */,
+				C43288FE243C6B81003AACDD /* LoadableState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,13 +427,15 @@
 				C445D1D82420CCED00EFC792 /* Sources */,
 				C445D1D92420CCED00EFC792 /* Frameworks */,
 				C445D1DA2420CCED00EFC792 /* Resources */,
-				2EABFAD8770217DC6D0DFC26 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TestIOSSwiftUI;
+			packageProductDependencies = (
+				C444B34724373F7200CA5B26 /* ReSwift */,
+			);
 			productName = TestIOSSwiftUI;
 			productReference = C445D1DC2420CCED00EFC792 /* SP_IOSSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -372,7 +467,6 @@
 				C445D1F92420CCEF00EFC792 /* Sources */,
 				C445D1FA2420CCEF00EFC792 /* Frameworks */,
 				C445D1FB2420CCEF00EFC792 /* Resources */,
-				E09D9F56D4C1AF1C492A115C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -416,6 +510,9 @@
 				Base,
 			);
 			mainGroup = C445D1D32420CCED00EFC792;
+			packageReferences = (
+				C444B34624373F7200CA5B26 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = C445D1DD2420CCED00EFC792 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -470,23 +567,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EABFAD8770217DC6D0DFC26 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestIOSSwiftUI/Pods-TestIOSSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestIOSSwiftUI/Pods-TestIOSSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestIOSSwiftUI/Pods-TestIOSSwiftUI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8335808E5F821A8B646AB9A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,23 +611,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E09D9F56D4C1AF1C492A115C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests/Pods-TestIOSSwiftUI-TestIOSSwiftUIUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FCDC22DDCA7BE0AA21540B6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -582,13 +645,20 @@
 				C445D1E02420CCED00EFC792 /* AppDelegate.swift in Sources */,
 				C47333CC242C6152005B8A23 /* LandmarkList.swift in Sources */,
 				C44018B3242A105700A679DB /* LandmarkDetailXib.swift in Sources */,
-				C496A1F2242B40E800E65C56 /* NetworkManager.swift in Sources */,
 				C44018A62429C0D900A679DB /* CircleImage.swift in Sources */,
+				C407564A24388359005599B7 /* APIService.swift in Sources */,
+				C444B34F2437510600CA5B26 /* MovieState.swift in Sources */,
+				C444B3512437516500CA5B26 /* ObservableState.swift in Sources */,
 				C41713C5242CC4B6003E39E4 /* MovieRow.swift in Sources */,
 				C44018BC242A21C900A679DB /* LandmarkDetailMSRepresentable.swift in Sources */,
+				C43288FF243C6B81003AACDD /* LoadableState.swift in Sources */,
+				C4C34CE1243B06E30054ABF0 /* ListMovieState.swift in Sources */,
+				C43288F8243C1DF6003AACDD /* RestClient.swift in Sources */,
 				C4E8F27B242CDD1700FF2BB7 /* RemoteImage.swift in Sources */,
+				C444B34B2437507200CA5B26 /* MovieAction.swift in Sources */,
 				C440187D2429B54500A679DB /* Data.swift in Sources */,
 				C4E8F279242CCC8100FF2BB7 /* ListMoviesView.swift in Sources */,
+				C43734B424347C5900FAAFB5 /* MovieRepository.swift in Sources */,
 				C44018822429B89200A679DB /* CategoryRow.swift in Sources */,
 				C440187E2429B54500A679DB /* UserData.swift in Sources */,
 				C445D1E22420CCED00EFC792 /* SceneDelegate.swift in Sources */,
@@ -596,8 +666,10 @@
 				C44018802429B54500A679DB /* Landmark.swift in Sources */,
 				C44018532429AACD00A679DB /* Home.swift in Sources */,
 				C44018842429C06900A679DB /* LandmarkDetail.swift in Sources */,
+				C43288FA243C1E06003AACDD /* AppState.swift in Sources */,
 				C4E8F277242CCC0000FF2BB7 /* MovieDetails.swift in Sources */,
 				C496A1EF242B40B200E65C56 /* Movie.swift in Sources */,
+				C444B34D2437507F00CA5B26 /* MovieReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,8 +748,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -736,8 +811,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -765,6 +843,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestIOSSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = B662NB5DW7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestIOSSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -785,6 +864,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TestIOSSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = B662NB5DW7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TestIOSSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -922,6 +1002,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C444B34624373F7200CA5B26 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C444B34724373F7200CA5B26 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C444B34624373F7200CA5B26 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C445D1D42420CCED00EFC792 /* Project object */;
 }

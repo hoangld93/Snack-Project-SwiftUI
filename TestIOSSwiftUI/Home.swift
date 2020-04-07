@@ -25,31 +25,31 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                NavigationLink(
-                    destination: LandmarkDetailMSView(landmark: featured[0]).edgesIgnoringSafeArea(.top)
-                    //                    destination: LandmarkDetail(
-                    //                        landmark: featured[0]
-                    //                    )
-                ) {
-                    ZStack(alignment: .bottomLeading) {
-                        FeaturedLandmarks(landmarks: featured)
-                        Text(featured[0].name)
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.white)
-                            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-                    }
-                }
                 List {
+                    NavigationLink(
+                        destination: LandmarkDetailMSView(landmark: featured[0]).edgesIgnoringSafeArea(.top)
+                        //                    destination: LandmarkDetail(
+                        //                        landmark: featured[0]
+                        //                    )
+                    ) {
+                        ZStack(alignment: .bottomLeading) {
+                            FeaturedLandmarks(landmarks: featured)
+                            Text(featured[0].name)
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.white)
+                                .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                        }
+                    }
                     ForEach(categories.keys.sorted(), id: \.self) { key in
                         CategoryRow(categoryName: key, items: self.categories[key]!)
                     }
                     .listRowInsets(EdgeInsets())
-//                    NavigationLink(
-//                        destination: LandmarkDetailMSView(landmark: featured[0]).edgesIgnoringSafeArea(.top)
-//                    ) {
-//                        FeaturedLandmarks(landmarks: featured)
-//                    }
+                    //                    NavigationLink(
+                    //                        destination: LandmarkDetailMSView(landmark: featured[0]).edgesIgnoringSafeArea(.top)
+                    //                    ) {
+                    //                        FeaturedLandmarks(landmarks: featured)
+                    //                    }
                     NavigationLink(
                         destination: LandmarkList()
                     ) {
